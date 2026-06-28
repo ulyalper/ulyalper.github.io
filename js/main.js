@@ -50,7 +50,7 @@
     var project = PROJECTS.filter(function (p) { return p.id === id; })[0];
 
     if (!project) {
-      document.title = "Project not found — Ulyana Alper";
+      document.title = "Project not found — Uliana Alper";
       root.innerHTML =
         '<div class="not-found container">' +
         "<h1>Project not found</h1>" +
@@ -60,14 +60,13 @@
       return;
     }
 
-    document.title = project.title + " — Ulyana Alper";
+    document.title = project.title + " — Uliana Alper";
 
     var metaItems = [
       { label: "Role", value: project.role },
       { label: "Location", value: project.location },
       { label: "Year", value: project.year },
       { label: "Scale", value: project.scale },
-      { label: "Disciplines", value: project.disciplines },
     ];
     var metaHtml = metaItems
       .filter(function (m) { return m.value; })
@@ -99,20 +98,20 @@
 
       '<section class="section section-sand detail-body"><div class="container"><div class="detail-cols">' +
       "<div>" +
-      "<h2>Key Responsibilities</h2>" +
-      '<ul class="resp-list">' + respHtml + "</ul>" +
-      "</div>" +
-      "<div>" +
+      "<h2>Description</h2>" +
       '<p class="detail-summary">' + escapeHtml(project.summary || "") + "</p>" +
       '<div class="gallery">' + galleryHtml + "</div>" +
+      "</div>" +
+      "<div>" +
+      "<h2>Key Responsibilities</h2>" +
+      '<ul class="resp-list">' + respHtml + "</ul>" +
       "</div>" +
       "</div></div></section>" +
 
       '<section class="section section-pine detail-cta"><div class="container">' +
-      "<h2>Interested in working together?</h2>" +
-      '<p class="sub">Reach out at ulyalper@gmail.com or grab my CV.</p>' +
+      "<h2>Let's work together</h2>" +
       '<p style="margin-top:24px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">' +
-      '<a class="btn btn-outline" href="assets/Ulyana_Alper_CV.pdf" download>↓ Download CV</a>' +
+      '<a class="btn btn-outline" href="assets/Uliana_Alper_CV.pdf" download>↓ Download CV</a>' +
       '<a class="btn btn-outline" href="index.html#contact">Contact me</a>' +
       "</p>" +
       "</div></section>";
